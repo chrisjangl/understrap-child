@@ -1,0 +1,181 @@
+// sections
+main, section, .section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    // the first element of each should have no spacing above it 
+    // (since it's already handled by padding on main,section)
+    *:first-child {
+        margin-top: 0;
+    }
+    div:first-child {
+        padding-top: 0;
+    }
+
+    // the last element of each should have no spacing below it 
+    // (since it's already handled by padding on main,section)
+    *:last-child {
+        margin-bottom: 0;
+    }
+    div:last-child, aside:last-child, section:last-child, main:last-child {
+        padding-bottom: 0;
+    }
+
+    // but if element has .blended, then reduce the padding-bottom on it, 
+    // reduce the padding-top on it's immediate sibling
+    &.blended {
+        padding-bottom: 1.5rem;
+
+        + main, + section {
+            padding-top: 1.5rem;
+        }
+    }
+
+}
+
+main.border, section.border {
+    border-top-width: 5px !important;
+    border-left-width: 0 !important;
+    border-right-width: 0 !important;
+    border-bottom-width: 0 !important;
+}
+
+main.no-border, section.no-border {
+    border: 0 !important;
+}
+
+.maintext {
+    margin: auto;
+}
+
+aside {
+    text-align: center;
+    padding-top: map-get( $spacers, 4 );
+    padding-bottom: map-get( $spacers, 4 );
+    position: relative;
+
+    h2 {
+        color: $white;
+        margin-bottom: 0;
+        text-transform: capitalize;
+    }
+
+    span {
+        color: $gray-dark;
+    }
+}
+
+aside.bar {
+    h2 {
+        text-transform: uppercase;
+        text-align: left;
+    }
+}
+
+a.no-underline {
+    text-decoration: none;
+}
+
+a.no-underline:hover {
+    text-decoration: underline;
+}
+
+.arrow-top, .arrow-bottom {
+    position: relative;
+}
+
+.arrow-top::before {
+    content: '';
+    position: absolute;
+    bottom: 99%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 0; 
+    height: 0; 
+    z-index: 10;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom-width: 20px;
+    border-bottom-style: solid;
+    border-bottom-color: inherit;
+}
+
+.arrow-bottom::after {
+    content: '';
+    position: absolute;
+    top: 99%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 0; 
+    height: 0;
+    z-index: 10;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top-width: 20px;
+    border-top-style: solid;
+    border-top-color: inherit;
+}
+
+.icon-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    &.stacked {
+        align-items: center;
+    }
+
+    @include media-breakpoint-down(md) {
+        border: none !important;
+    }
+    
+    .icon-holder {
+        margin-bottom: 2rem;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #3777a0;
+
+        .spacer {
+            width: 1rem;
+        }
+
+        @include media-breakpoint-down(md) {
+            // justify-content: center;
+            margin-bottom: 1rem;
+            justify-content: flex-start;
+
+            .spacer {
+                display: none;
+            }
+
+            .text-holder {
+                flex-basis: 100%;
+                text-align: center;
+                font-size: 1.25rem;
+            }
+        }
+    }
+
+    &.stacked .icon-holder {
+        flex-direction: column;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+
+    img.icon {
+        margin-right: .75em; 
+
+        @include media-breakpoint-down(md) {
+            margin-right: 1em;
+
+        }
+    }
+    
+}

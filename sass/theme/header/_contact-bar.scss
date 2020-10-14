@@ -1,0 +1,55 @@
+// this and .page-header only located in this partial b/c we'll only want to remove padding if we keep .contact-bar
+.navbar {
+    padding-bottom: 0;
+}
+
+.page-header {
+    display: none;
+}
+
+.contact-bar {
+    // @todo: remove this border - only used temporarily to see the distance between logo and contact bar
+
+    // padding-right is set to match .navbar, so we can align the last item here with the 
+    // last item in the main navigation
+    @media (min-width: 768px) {
+        padding-right: 1.5em;
+    }
+
+    @media (min-width: 992px) {
+        padding-right: 2em;
+    }
+
+    @media (min-width: 1200px) {
+        padding-right: 3em;
+    }
+
+    padding-bottom: 1rem;
+    
+    .row {
+        justify-content: center;
+
+        @include media-breakpoint-up(md) {
+            justify-content: flex-end;
+            margin-right: 0;
+        }
+    }
+    
+    .page-header-item {
+        padding: 0 1rem;
+        a { 
+            text-decoration: none;
+            color: $gold;
+        }
+        
+        i { 
+            color: $gold; margin-right: 5px;
+        }
+
+        // padding-right is set to match li.nav-item, so we can align the last item here with the 
+        // last item in the main navigation
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+}

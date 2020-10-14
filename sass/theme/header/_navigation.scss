@@ -1,0 +1,63 @@
+.navbar {
+    @include media-breakpoint-up(md) {
+        padding: 0.5em 1.5em;
+    }
+  
+    @include media-breakpoint-up(lg) {
+        padding: 0.5em 2em;
+    }
+
+    @include media-breakpoint-up(xl) {
+        padding: 0.5em 3em;
+    }
+
+    .navbar-brand img {
+        max-height: 115px;
+    }
+
+    @include media-breakpoint-down(sm) {
+        img {
+            width: 75px;
+            height: auto;
+        }
+    }
+
+    #small-cart-btn {
+        margin-right: 1rem;
+        margin-bottom: 0;
+    }
+
+    .navbar-nav li.nav-item a {
+        text-decoration: none;
+        padding-left: 1em;
+        padding-right: 1em;
+        color: $white;
+        font-weight: bold;
+        text-transform: uppercase;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .btn {
+        background: darken($color: $primary, $amount: 30%);
+        color: $gold !important;
+        font-size: 1em;
+        padding: .8em 2em;
+        text-decoration: none !important;
+
+        &:hover {
+            background: $gold !important;
+            color: white !important;
+        }
+    }
+
+    i {
+        margin-right: .5em;
+    }
+
+    button.navbar-toggler {
+        border: none;
+    }
+}
