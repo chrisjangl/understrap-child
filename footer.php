@@ -17,114 +17,102 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <div class="wrapper" id="wrapper-footer">
 
-	<div class="<?php echo esc_attr( $container ); ?>">
+    <footer id="colophon" class="site-footer page-footer bg-blue-dark font-small white">
 
-		<div class="row">
+        <!-- Footer Links -->
+        <section class="container-fluid text-md-left">
 
-			<div class="col-md-12">
+            <!-- Grid row -->
+            <div class="row">
 
-				<footer id="colophon" class="site-footer page-footer bg-blue-dark font-small white">
+                <!-- Grid column -->
+                <div class="col-md-5 ">
+                    <div class="row">
 
-					<!-- Footer Links -->
-					<section class="container-fluid text-md-left">
+                        <div class="col-md-4">
+                            <a href="<%= siteVars.url %>/" class="navbar-brand py-0 mb-3 mb-md-0 mr-auto">
+                                <img src="/<%= siteVars.public_folder %>/images/logo.png" alt="USA Serivce Dog Registry">
+                            </a>
+                        </div>
+                        <!-- Content -->
+                        <div class="col-md-8">
 
-						<!-- Grid row -->
-						<div class="row">
+                            <h5 class="text-uppercase gold mb-1">Customer Service</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="tel:888-656-3647">888-656-DOGS(3647)</a></li>
+                                <li><a href="mailto:orders@usaservicedogs.org">orders@usaservicedogs.org</a></li>
+                            </ul>
+                            <ul class="list-unstyled font-weight-bold">
+                                <li><a href="<%= siteVars.url %>/contact">Contact Us</a></li>
+                                <li><a href="<%= siteVars.url %>/lookup">ID Lookup</a></li>
+                                <li><a href="<%= siteVars.url %>/members">Members</a></li>
+                                <li><a href="<%= siteVars.url %>/return-policy">Return Policy</a></li>
+                                <li><a href="<%= siteVars.url %>/faq">FAQs</a></li>
+                                <li><a href="<%= siteVars.url %>/sitemap">Site Map</a></li>
+                            </ul>
+                        </div>
 
-							<!-- Grid column -->
-							<div class="col-md-5 ">
-								<div class="row">
+                    </div>
 
-									<div class="col-md-4">
-										<a href="<%= siteVars.url %>/" class="navbar-brand py-0 mb-3 mb-md-0 mr-auto">
-											<img src="/<%= siteVars.public_folder %>/images/logo.png" alt="USA Serivce Dog Registry">
-										</a>
-									</div>
-									<!-- Content -->
-									<div class="col-md-8">
+                </div>
 
-										<h5 class="text-uppercase gold mb-1">Customer Service</h5>
-										<ul class="list-unstyled">
-											<li><a href="tel:888-656-3647">888-656-DOGS(3647)</a></li>
-											<li><a href="mailto:orders@usaservicedogs.org">orders@usaservicedogs.org</a></li>
-										</ul>
-										<ul class="list-unstyled font-weight-bold">
-											<li><a href="<%= siteVars.url %>/contact">Contact Us</a></li>
-											<li><a href="<%= siteVars.url %>/lookup">ID Lookup</a></li>
-											<li><a href="<%= siteVars.url %>/members">Members</a></li>
-											<li><a href="<%= siteVars.url %>/return-policy">Return Policy</a></li>
-											<li><a href="<%= siteVars.url %>/faq">FAQs</a></li>
-											<li><a href="<%= siteVars.url %>/sitemap">Site Map</a></li>
-										</ul>
-									</div>
+                <hr class="col-8 bg-white d-md-none my-4 mx-auto">
 
-								</div>
+                <!-- Grid column -->
+                <div class="border-left border-white col-md-6 text-uppercase h5">
 
-							</div>
+                    <!-- Links -->
 
-							<hr class="col-8 bg-white d-md-none my-4 mx-auto">
+                    <ul class="list-unstyled">
+                        <li><a href="<%= siteVars.url %>/register/service-dog-registration/">Register Service Dog</a></li>
+                        <li><a href="<%= siteVars.url %>/register/emotional-support-dog-registration/">Register Emotional Support Dog</a></li>
+                        <li><a href="<%= siteVars.url %>/shop/">Shop</a></li>
+                        <li><a href="<%= siteVars.url %>/more-information/">Info Center</a></li>
+                        <li><a href="<%= siteVars.url %>/blog/">Blog</a></li>
+                    </ul>
 
-							<!-- Grid column -->
-							<div class="border-left border-white col-md-6 text-uppercase h5">
+                </div>
+                <!-- Grid column -->
 
-								<!-- Links -->
+            </div>
+            <!-- Grid row -->
 
-								<ul class="list-unstyled">
-									<li><a href="<%= siteVars.url %>/register/service-dog-registration/">Register Service Dog</a></li>
-									<li><a href="<%= siteVars.url %>/register/emotional-support-dog-registration/">Register Emotional Support Dog</a></li>
-									<li><a href="<%= siteVars.url %>/shop/">Shop</a></li>
-									<li><a href="<%= siteVars.url %>/more-information/">Info Center</a></li>
-									<li><a href="<%= siteVars.url %>/blog/">Blog</a></li>
-								</ul>
+        </section>
+        <!-- Footer Links -->
 
-							</div>
-							<!-- Grid column -->
+        <!-- Copyright -->
+        <section class="footer-copyright container-fluid py-0 mb-5">
+            <div class="colophon mb-4">
+                Copyright &copy; 2012-2020 USA Service Dogs. All rights reserved.
+            </div>
 
-						</div>
-						<!-- Grid row -->
+            <small>USA Service Dogs uses industry standard 256-bit encryption to secure the data you send to us including
+                personal information accompanying your registration as well as payment information. We do not store credit
+                numbers anywhere on our servers, they are used once only at the time the transaction occurs. We collect your
+                e-mail address only to send you order confirmation emails, registration information, and occasional news and
+                updates about our service. We do not sell or give any of your information, including your e-mail address, to
+                any third party organizations. USA Service Dogs is an organization providing service dog and emotional
+                support animal registration services and products independent of any government organization. Read about
+                fake service dog registrations and the problems they create. Registration not required by the ADA.<br />
+                v1.0.24</small>
+        </section>
+        <!-- Copyright -->
 
-					</section>
-					<!-- Footer Links -->
+        <section class="no-border py-4" id="powered-by">
+            <div class="container">
 
-					<!-- Copyright -->
-					<section class="footer-copyright container-fluid py-0 mb-5">
-						<div class="colophon mb-4">
-							Copyright &copy; 2012-2020 USA Service Dogs. All rights reserved.
-						</div>
+                <div class="row">
 
-						<small>USA Service Dogs uses industry standard 256-bit encryption to secure the data you send to us including
-							personal information accompanying your registration as well as payment information. We do not store credit
-							numbers anywhere on our servers, they are used once only at the time the transaction occurs. We collect your
-							e-mail address only to send you order confirmation emails, registration information, and occasional news and
-							updates about our service. We do not sell or give any of your information, including your e-mail address, to
-							any third party organizations. USA Service Dogs is an organization providing service dog and emotional
-							support animal registration services and products independent of any government organization. Read about
-							fake service dog registrations and the problems they create. Registration not required by the ADA.<br />
-							v1.0.24</small>
-					</section>
-					<!-- Copyright -->
+                        <img src="/<%= siteVars.public_folder %>/images/powered-by.png" alt="">
 
-					<section class="no-border py-4" id="powered-by">
-						<div class="container">
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container-fluid -->
+        </section>
+        <!-- end #powered-by -->
 
-							<div class="row">
-
-									<img src="/<%= siteVars.public_folder %>/images/powered-by.png" alt="">
-
-							</div>
-							<!-- end row -->
-						</div>
-						<!-- end container-fluid -->
-					</section>
-					<!-- end #powered-by -->
-
-				</footer><!-- #colophon -->
-
-			</div><!--col end -->
-
-		</div><!-- row end -->
-
-	</div><!-- container end -->
+    </footer><!-- #colophon -->
 
 </div><!-- wrapper end -->
 
