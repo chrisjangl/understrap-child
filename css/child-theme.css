@@ -12975,6 +12975,8 @@ footer {
     footer a:hover {
       color: white;
       text-decoration: underline; }
+    footer a.navbar-brand.custom-logo-link {
+      display: initial; }
   footer ul {
     margin-left: 0; }
     footer ul li {

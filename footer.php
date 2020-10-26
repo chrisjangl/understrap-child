@@ -3,6 +3,9 @@
  * The template for displaying the footer
  *
  * Contains the closing of the #content div and all content after
+ * 
+ * @todo: make sure to remove all JS code - <% %>
+ * @todo: the_custom_logo() links to the WP site url
  *
  * @package UnderStrap
  */
@@ -30,9 +33,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                     <div class="row">
 
                         <div class="col-md-4">
-                            <a href="<%= siteVars.url %>/" class="navbar-brand py-0 mb-3 mb-md-0 mr-auto">
-                                <img src="/<%= siteVars.public_folder %>/images/logo.png" alt="USA Serivce Dog Registry">
-                            </a>
+                                <?php the_custom_logo(); ?>
                         </div>
                         <!-- Content -->
                         <div class="col-md-8">
