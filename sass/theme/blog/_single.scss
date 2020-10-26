@@ -1,0 +1,188 @@
+.single-post  {
+    background: #e6e7e9;
+
+    // social sharing
+    aside.social-share-holder {
+        // also includes margin set below, for clarity purposes
+        // margin-bottom: 2rem;
+        
+        @include media-breakpoint-up(lg) {
+            padding: 0;
+            margin-left: calc(.9375rem * 2);
+            margin-right: 0;
+        }
+        .social-share-links {
+            list-style-type: none;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+    
+            li {
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 15px;
+                
+                i {
+                    font-size: 1.75rem;
+                    color: $blue;
+                }
+            }
+    
+            @include media-breakpoint-down(lg) {
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+
+                li {
+                    margin-bottom: 0;
+                }
+            }
+        
+        }
+    }
+
+    @include media-breakpoint-down(lg) {
+        aside {
+            order: 2;
+        }
+    }
+    
+    // main blog post
+    article {
+        aside, nav {
+            margin-bottom: 3rem;
+        }
+        
+        main {
+            
+            .featured-image-holder {
+                position: relative;
+                margin-bottom: 2.5rem;
+                
+                img {
+                    width: 100%;
+                    box-shadow: -5px 5px 10px 5px gray;
+                }
+            }
+
+            .post-meta {
+
+                .category-holder {
+                    text-transform: uppercase;
+                    color: $red;
+                }
+
+                .title {
+                    color: $blue;
+                    text-align: left;
+                    text-transform: capitalize;
+                    // line-height: 1.1;
+                    // font-size: 3rem;
+                    
+                    // @include media-breakpoint-down(lg) {
+                    //     font-size: 1.5rem !important;
+                    //     line-height: 1.2 !important;
+                    // }
+                }
+                
+                .date {
+                    display: block;
+                    color: $blue;
+                    margin-bottom: .5rem;
+                }
+            }
+
+            .content-holder {
+                @include media-breakpoint-up(lg) {
+                    padding-right: 20%
+                }
+                color: #545557;
+                border-bottom: 1px solid $gold;
+
+                p {
+                    line-height: 2;
+                    margin-bottom: 1.5rem;
+                }
+            }
+            
+        
+        }
+
+        nav {
+            .nav-links a {
+                text-transform: uppercase;
+
+                i {
+                    display: none;
+                }
+            }
+        }
+
+    }
+
+    @include media-breakpoint-down(lg) {
+        // want to make sure we're only targeting the main article for column, not related posts in the aside.
+        .row > article {
+            flex-direction: column;
+            
+            & > aside, & > main {
+                width: calc(100% - 1.875rem) !important;
+
+                .related-posts, .recent-posts {
+                    padding-left: 0.9375rem;
+                    padding-right: 0.9375rem;
+                }
+            }
+        }
+    }
+    
+    // sidebar
+    aside .related-posts {
+        // also includes margin set above, for clarity purposes:
+        // margin-bottom: 2rem;
+        
+        h2 {
+            font-size: 40px;
+            border-bottom: 3px solid $blue;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        article {
+            margin-bottom: 1.5rem;
+        
+            h3 {
+                line-height: 1.25;
+                font-size: 1rem;
+                padding: 0;
+                margin: 0;
+                a {
+                    color: $blue;
+                    font-weight: bold;
+                }
+            }
+            
+            .post-date {
+               font-size: 0.75rem;
+               display: block;
+               margin-bottom: .5rem;
+            }
+            
+            .read-more {
+                color: $red;
+                font-size: 0.9rem;
+                font-weight: 200; 
+                display: block;
+                text-transform: uppercase;
+                text-decoration: underline;
+            }
+        }
+
+        &:last-child article:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
