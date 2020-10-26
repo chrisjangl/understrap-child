@@ -12889,50 +12889,52 @@ a.no-underline:hover {
         .single-post .row > article > aside .related-posts, .single-post .row > article > aside .recent-posts, .single-post .row > article > main .related-posts, .single-post .row > article > main .recent-posts {
           padding-left: 0.9375rem;
           padding-right: 0.9375rem; } }
-  .single-post aside .related-posts {
-    border-top: 1px solid #dac23c;
-    padding-top: 1.5rem; }
-    .single-post aside .related-posts h2 {
-      font-size: 1rem;
-      text-align: left;
-      color: #fe0000;
-      text-transform: uppercase;
-      font-weight: bold;
-      letter-spacing: 2px; }
-    .single-post aside .related-posts article {
-      margin-top: 1.5rem;
-      padding-bottom: 1.5rem;
-      border-bottom: 1px solid #dac23c; }
-      .single-post aside .related-posts article .image-holder {
-        text-align: left;
-        margin-bottom: 1rem; }
-        .single-post aside .related-posts article .image-holder img {
-          -webkit-box-shadow: -5px 5px 5px -2px gray;
-                  box-shadow: -5px 5px 5px -2px gray; }
-      .single-post aside .related-posts article .meta-holder {
-        text-align: left; }
-      .single-post aside .related-posts article h3 {
-        line-height: 1.25;
-        text-transform: capitalize;
+  .single-post aside {
+    padding-top: 3rem; }
+    .single-post aside .related-posts {
+      border-top: 1px solid #dac23c;
+      padding-top: 1.5rem; }
+      .single-post aside .related-posts h2 {
         font-size: 1rem;
-        padding: 0;
-        margin: 0; }
-        .single-post aside .related-posts article h3 a {
-          color: #152f69;
-          font-weight: bold;
-          text-decoration: none; }
-      .single-post aside .related-posts article .post-date {
-        color: #152f69;
-        font-size: 0.75rem;
-        display: block;
-        margin-bottom: .5rem; }
-      .single-post aside .related-posts article .excerpt-holder {
-        color: #545557;
-        font-size: 0.8rem;
         text-align: left;
-        display: block; }
-    .single-post aside .related-posts:last-child article:last-child {
-      margin-bottom: 0; }
+        color: #fe0000;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 2px; }
+      .single-post aside .related-posts article {
+        margin-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid #dac23c; }
+        .single-post aside .related-posts article .image-holder {
+          text-align: left;
+          margin-bottom: 1rem; }
+          .single-post aside .related-posts article .image-holder img {
+            -webkit-box-shadow: -5px 5px 5px -2px gray;
+                    box-shadow: -5px 5px 5px -2px gray; }
+        .single-post aside .related-posts article .meta-holder {
+          text-align: left; }
+        .single-post aside .related-posts article h3 {
+          line-height: 1.25;
+          text-transform: capitalize;
+          font-size: 1rem;
+          padding: 0;
+          margin: 0; }
+          .single-post aside .related-posts article h3 a {
+            color: #152f69;
+            font-weight: bold;
+            text-decoration: none; }
+        .single-post aside .related-posts article .post-date {
+          color: #152f69;
+          font-size: 0.75rem;
+          display: block;
+          margin-bottom: .5rem; }
+        .single-post aside .related-posts article .excerpt-holder {
+          color: #545557;
+          font-size: 0.8rem;
+          text-align: left;
+          display: block; }
+      .single-post aside .related-posts:last-child article:last-child {
+        margin-bottom: 0; }
 
 #powered-by {
   background: #152f69; }
