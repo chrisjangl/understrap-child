@@ -12826,7 +12826,7 @@ a.no-underline:hover {
       margin-bottom: 15px; }
       .single-post aside.social-share-holder .social-share-links li i {
         font-size: 1.75rem;
-        color: #152f69; }
+        color: #dac23c; }
     @media (max-width: 1199.98px) {
       .single-post aside.social-share-holder .social-share-links {
         -webkit-box-orient: horizontal;
@@ -12847,6 +12847,16 @@ a.no-underline:hover {
               order: 2; } }
   .single-post article aside, .single-post article nav {
     margin-bottom: 3rem; }
+  .single-post article main .image-and-sharing {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    @media (max-width: 991.98px) {
+      .single-post article main .image-and-sharing {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
   .single-post article main .featured-image-holder {
     position: relative;
     margin-bottom: 2.5rem; }

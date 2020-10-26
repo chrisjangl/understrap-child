@@ -25,8 +25,8 @@ if ( ! defined( 'ABSPATH' ) ) {
     // adding NAP etc to theme options (Responsive parent theme)
 	// include("functions-theme-options.php");
 	
-	// templating functions (Responsive parent theme)
-	// include("functions-theme-functions.php"); 
+	// templating functions
+	include("functions-theme-functions.php"); 
 
 	// register navigation
 	// include("functions-navigation.php");

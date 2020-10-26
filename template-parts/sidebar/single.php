@@ -16,7 +16,7 @@
             <?php echo get_the_date( 'm-d-Y'); ?>
         </span>
     </div>
-    <div class="excerpt-holder small-6 cell">
+    <div class="excerpt-holder">
         <?php echo get_the_excerpt(); ?>
     </div>
 </article>

@@ -25,18 +25,22 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<article class="inner-content">
 
- 			<aside class="social-share-holder medium-1 cell">
-				<?php //echo dc_social_share_links(); ?>
-			</aside>
-
+			
 			<main class="site-main main small-12 medium-7" id="main">
 				
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-
-				<div class="featured-image-holder">
-					<?php the_post_thumbnail('full'); ?>
-				</div>
 				
+				<div class="image-and-sharing">
+
+					<div class="featured-image-holder">
+						<?php the_post_thumbnail('full'); ?>
+					</div>
+					
+					<aside class="social-share-holder">
+						<?php echo dc_social_share_links(); ?>
+					</aside>
+				</div>
+
 				<div class="post-meta">
 					<div class="category-holder">
 						<?php 

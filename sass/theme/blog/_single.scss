@@ -27,7 +27,7 @@
                 
                 i {
                     font-size: 1.75rem;
-                    color: $blue;
+                    color: $gold;
                 }
             }
     
@@ -58,6 +58,13 @@
         
         main {
             
+            .image-and-sharing {
+                display: flex;
+
+                @include media-breakpoint-down(md) {
+                    flex-direction: column;
+                }
+            }
             .featured-image-holder {
                 position: relative;
                 margin-bottom: 2.5rem;
