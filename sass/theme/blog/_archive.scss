@@ -1,4 +1,6 @@
 .blog {
+    background: #e6e7e9;
+
     .archive {
         &#primary {
             margin-top: 2rem;
@@ -40,7 +42,6 @@
             }
 
             article {
-
                 .image-holder {
                     position: relative;
                     width: 100%;
@@ -54,6 +55,7 @@
 
                 .title-holder {
                     position: absolute;
+
                     bottom: 2%;
                     left: 3%; right: 3%;
 
@@ -63,6 +65,7 @@
                         font-size: 30px; 
                         text-shadow: 1px 1px 1px black;
                         font-weight: bold;
+                        text-decoration: none;
                     }
                 }
             }
@@ -70,12 +73,12 @@
         
         // recent posts
         main  {
+            border-top: 1px solid $gold;
             
             h2 {
                 line-height: 1;
                 text-transform: uppercase;
                 color: $red;
-                border-bottom: 3px solid $blue;
                 padding-bottom: 20px;
                 margin-bottom: 20px;
             }
@@ -101,7 +104,7 @@
                 padding-right: 2rem;
                 
                 &:nth-last-child(-n+3) {
-                    border-bottom: 0;
+                    // border-bottom: 0;
                 }
                 
                 .title-holder {
