@@ -2,7 +2,7 @@
 
     <div class="image-holder">
         <a href="<?php echo get_the_permalink(); ?>" >
-            <?php echo get_the_post_thumbnail( null, 'thumbnail' ); ?>
+            <?php echo get_the_post_thumbnail( null, array('200', 'auto') ); ?>
         </a>
     </div>
 

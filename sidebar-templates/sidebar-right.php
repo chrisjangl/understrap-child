@@ -25,7 +25,7 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
     
     <div class="related-posts most-read-posts">
 
-        <h2 class="grid-margin-x">Featured Posts</h2>
+        <h2 class="">Featured Posts</h2>
 
         <?php dc_get_recent_posts(); ?>
         <?php // dc_get_featured_posts(); ?>
