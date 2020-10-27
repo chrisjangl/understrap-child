@@ -30,26 +30,26 @@ function dc_social_share_links() {
 	ob_start();
 	?>
 	<ul class="social-share-links">
-		<li>
-			<a href="<?php echo $mail_share_url; ?>">
-				<i class="fa fa-envelope"></i>
-			</a>
-		</li>
-		<li class="social-share facebook">
-			<a href="<?php echo $fb_share_url;?>" target="_blank"	>
-				<i class="fab fa-facebook" ></i>
+        <li class="social-share facebook">
+            <a href="<?php echo $fb_share_url;?>" target="_blank"	>
+				<i class="fa fa-facebook" ></i>
 			</a>
 		</li>
 		<li class="social-share twitter">
-			<a href="<?php echo $twitter_share_url;?>" target="_blank"	>
-				<i class="fab fa-twitter" ></i>
+            <a href="<?php echo $twitter_share_url;?>" target="_blank"	>
+				<i class="fa fa-twitter" ></i>
 			</a>
 		</li>
 		<li class="social-share linkedin">
-			<a href="<?php echo $linkedIn_share_url;?>" target="_blank"	>
-				<i class="fab fa-linkedin" ></i>
+            <a href="<?php echo $linkedIn_share_url;?>" target="_blank"	>
+				<i class="fa fa-linkedin" ></i>
 			</a>
 		</li>
+        <li>
+            <a href="<?php echo $mail_share_url; ?>">
+                <i class="fa fa-envelope"></i>
+            </a>
+        </li>
 	</ul>
 	<?php
 

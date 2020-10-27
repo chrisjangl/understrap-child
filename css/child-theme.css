@@ -12800,6 +12800,7 @@ a.no-underline:hover {
   .single-post aside.social-share-holder .social-share-links {
     list-style-type: none;
     margin: 0;
+    padding: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -12807,9 +12808,9 @@ a.no-underline:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end; }
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
     .single-post aside.social-share-holder .social-share-links li {
       text-align: center;
       display: -webkit-box;
@@ -12823,7 +12824,7 @@ a.no-underline:hover {
               align-items: center;
       margin-bottom: 15px; }
       .single-post aside.social-share-holder .social-share-links li i {
-        font-size: 1.75rem;
+        font-size: 1.25rem;
         color: #dac23c; }
     @media (max-width: 1199.98px) {
       .single-post aside.social-share-holder .social-share-links {
