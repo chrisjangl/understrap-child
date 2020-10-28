@@ -20,7 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     // include( "./functions-analytics.php" );
 
 	// holds function definitions for common developer needs
-	// include("functions-developer.php"); 
+	include("functions-developer.php"); 
     
     // adding NAP etc to theme options (Responsive parent theme)
 	// include("functions-theme-options.php");
