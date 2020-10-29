@@ -1,0 +1,426 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #000000;
+}
+
+.arrow-right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg)
+}
+
+.smallNavbar {
+    display: none
+}
+
+.largeNavbar {
+    display: block
+}
+
+.menu-item {
+    color: #ffffff;
+    font-size: 16px;
+    padding-top: 20px
+}
+
+.menu-item a {
+    color: #ffffff;
+    font-size: 15px
+}
+
+.brand>a {
+    color: #ffffff;
+    font-size: 22px;
+    font-style: italic
+}
+
+#brand-title>a:hover {
+    text-decoration: none
+}
+
+.navbar-brand {
+    color: #ffffff !important;
+    font-size: 26px;
+    display: inline-block
+}
+
+#brand-flag {
+    padding-top: 13px
+}
+
+.emtext {
+    font-style: italic
+}
+
+.big {
+    font-size: 23px
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none
+}
+
+.buy-btn {
+    font-weight: 700;
+    font-size: 18px
+}
+
+
+.benefits>ul li {
+    font-size: 16px;
+    list-style-type: square
+}
+
+ul {
+    list-style: outside disc;
+    margin-left: 1em
+}
+
+ul li {
+    position: relative;
+    left: 1em;
+    padding-right: 1em
+}
+
+​ .caption {
+    font-size: 16px
+}
+
+.faq-question h4 {
+    font-style: italic;
+    font-weight: bold;
+    color: #2c8b2f
+}
+
+.faq-question p {
+    font-size: 16px
+}
+
+.boldtext {
+    font-weight: 700;
+    font-size: 16px
+}
+
+.normaltext {
+    font-weight: 400
+}
+
+.bigtext {
+    font-size: 22px
+}
+
+.huge {
+    font-size: 23px !important
+}
+
+.smalltext {
+    font-size: 14px
+}
+
+.tinytext {
+    font-size: 11px
+}
+
+.oldprice {
+    color: #5f5f5f;
+    font-size: 15px;
+    text-decoration: line-through;
+    font-weight: normal
+}
+
+.newprice {
+    font-size: 18px;
+    font-weight: normal
+}
+
+.product-title {
+    font-size: 22px;
+    font-weight: 300
+}
+
+.form-control-inline {
+    min-width: 0;
+    width: auto;
+    display: inline
+}
+
+.order-preview {
+    padding-top: 5px
+}
+
+.green {
+    color: #2c8b2f
+}
+
+.red {
+    color: #f01a14
+}
+
+.blue {
+    color: #1d39ff
+}
+
+.control-label {
+    font-weight: 400
+}
+
+#previewFull {
+    position: absolute;
+    z-index: 1
+}
+
+#preview {
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0
+}
+
+.payment-errors {
+    padding: 10px;
+    margin: 5px;
+    display: none
+}
+
+.testimonial div {
+    padding-left: 25px;
+    background-image: url('/images/TestimonialBg.jpg');
+    background-repeat: no-repeat;
+    background-size: 20px 100%
+}
+
+.testimonial p {
+    font-style: italic;
+    font-size: 16px
+}
+
+.testimonial .author {
+    text-align: right;
+    font-style: normal
+}
+
+.main-grid th {
+    text-align: center;
+    font-size: 18px
+}
+
+.main-grid td {
+    text-align: left;
+    font-size: 16px
+}
+
+.main-grid .text-center {
+    text-align: center !important
+}
+
+.main-grid .grid-cell {
+    vertical-align: middle
+}
+
+.vcenter {
+    display: table-cell;
+    vertical-align: middle;
+    float: none
+}
+
+.text-middle {
+    vertical-align: middle !important
+}
+
+.headline {
+    font-size: 22px;
+    font-style: italic;
+    padding-top: 10px;
+    padding-bottom: 10px
+}
+
+.large-headline {
+    font-size: 28px;
+    font-style: italic;
+    font-weight: 700;
+    padding-top: 5px;
+    padding-bottom: 5px
+}
+
+.maintext {
+    font-size: 18px
+}
+
+li .header {
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px
+}
+
+.sale-bg {
+    background-color: #fffd00;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px
+}
+
+.vest-size {
+    padding: 16px !important;
+    font-size: 16px
+}
+
+.bg-yellow {
+    background-color: #fffd00
+}
+
+.bg-light-blue {
+    background-color: #a2b0ff
+}
+
+.bg-green {
+    background-color: #43ff21
+}
+
+.bg-pink {
+    background-color: #eca3ff
+}
+
+.bg-red {
+    background-color: #ff9b9e
+}
+
+.bg-blue {
+    background-color: #bccfff
+}
+
+.smallOnly {
+    display: none
+}
+
+.greentext {
+    color: #0a6a10
+}
+
+@media screen and (max-width:700px) {
+    .first-text {
+        padding-top: 28px !important
+    }
+}
+
+.button-register {
+    background: #00806e;
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    padding-top: 18px;
+    margin-top: -15px;
+    border-radius: 10px
+}
+
+.new-navbar-custom {
+    background: url(../images/faq-banner.jpg);
+    background-position: left 0 bottom -80px;
+    height: 230px !important;
+    min-width: 500px;
+    border-bottom: solid 1px #000000;
+    margin-top: -120px
+}
+
+@media screen and (max-width:1500px) {
+    .new-navbar-custom {
+        background-position: left -400px bottom -80px
+    }
+}
+
+.new-navbar-custom .container {
+    display: flex;
+    align-items: center
+}
+
+.new-navbar-custom .brand {
+    margin-top: 35px
+}
+
+.new-navbar-custom .brand span {
+    margin-left: 30px
+}
+
+.new-navbar-custom .brand #navSeal {
+    width: 122px !important;
+    height: 122px !important
+}
+
+.new-navbar-custom .brand a {
+    text-decoration: none
+}
+
+.new-navbar-custom .header-topright {
+    float: left;
+    margin: 54px 0 0 200px;
+    padding: 0
+}
+
+@media screen and (max-width:1000px) {
+    .new-navbar-custom .header-topright {
+        margin: 54px 0 0 100px
+    }
+}
+
+.new-navbar-custom .header-topright .mainmenu {
+    margin: 0;
+    padding: 0
+}
+
+.new-navbar-custom .header-topright .mainmenu li {
+    display: block;
+    float: left;
+    margin: 0 0 0 20px;
+    padding: 0
+}
+
+.new-navbar-custom .header-topright .mainmenu li a {
+    display: block;
+    margin: 0;
+    padding: 0 0 7px 0;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent
+}
+
+.new-navbar-custom .header-bottom-menu {
+    width: 100%;
+    height: 60px;
+    background: #005341;
+    bottom: 0px;
+    margin-top: 12px;
+    color: white;
+    display: flex;
+    align-items: center
+}
+
+.new-navbar-custom .header-bottom-menu .container {
+    display: flex
+}
+
+@media screen and (max-width:780px) {
+    .new-navbar-custom .header-bottom-menu .container {
+        margin-left: 0;
+        margin-right: 0
+    }
+}
+
+.new-navbar-custom .header-bottom-menu .container .menu-item {
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: left;
+    flex-grow: 1
+}

@@ -29,7 +29,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	include("functions-theme-functions.php"); 
 
 	// register navigation
-	// include("functions-navigation.php");
+	include("functions-navigation.php");
 	
 	// blog functionality
 	include("functions-blog.php");

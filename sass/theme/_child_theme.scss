@@ -1,3 +1,10 @@
+// originally brought this in to adjust main navigation, but it caused more problems, 
+// and I only needed 1 rule (ul li, in _legacy.scss:87); instead, I put that rule 
+// into header/_navigation.scss
+
+// legacy styles from USASD even before our v1 redesign of the JS site
+// @import "legacy";
+
 @import "mixins/dc-mixins";
 
 @import "utility";

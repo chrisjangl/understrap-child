@@ -12,7 +12,14 @@
     }
 
     .navbar-brand img {
+        max-width: 115px;
         max-height: 115px;
+    }
+
+    ul li {
+        position: relative;
+        left: 1em;
+        padding-right: 1em;
     }
 
     @include media-breakpoint-down(sm) {

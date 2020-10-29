@@ -72,7 +72,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						'container_class' => 'collapse navbar-collapse flex-column justify-content-around align-items-end',
 						'container_id'    => 'navbarNav',
 						'menu_class'      => 'navbar-nav',
-						'fallback_cb'     => '',
+						'fallback_cb'     => 'dc_get_navigation_from_JS',
 						'menu_id'         => '',
 						'depth'           => 2,
 						'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
@@ -84,6 +84,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<?php endif; ?>
 
         </nav><!-- .site-navigation -->
-       
+
+		<?php
+		echo dc_get_header_contact_bar(); ?>
 
 	</div><!-- #wrapper-navbar end -->
