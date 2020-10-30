@@ -87,6 +87,9 @@
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
                 margin-bottom: 1rem;
+                @include media-breakpoint-down(sm) {
+                    grid-template-columns: 100%;
+                }
             }
 
             article {
@@ -100,8 +103,10 @@
                 // can't use grid-column-gap for this, because we're counting
                 // on the border-bottom on each article to connect, simulating 
                 // a row-wide border
-                padding-left: 2rem;
-                padding-right: 2rem;
+                @include media-breakpoint-up(sm) {
+                    padding-left: 2rem;
+                    padding-right: 2rem;
+                }
                 
                 &:nth-last-child(-n+3) {
                     // border-bottom: 0;

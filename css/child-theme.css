@@ -12746,15 +12746,20 @@ a.no-underline:hover {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       margin-bottom: 1rem; }
+      @media (max-width: 767.98px) {
+        .blog .archive main .posts-holder {
+          grid-template-columns: 100%; } }
     .blog .archive main article {
       display: grid;
       grid-template-rows: 225px 4em 1.5em auto;
       grid-row-gap: 20px;
       border-bottom: 1px solid #dac23c;
       margin-bottom: 2rem;
-      padding-bottom: 2rem;
-      padding-left: 2rem;
-      padding-right: 2rem; }
+      padding-bottom: 2rem; }
+      @media (min-width: 576px) {
+        .blog .archive main article {
+          padding-left: 2rem;
+          padding-right: 2rem; } }
       .blog .archive main article .title-holder h3 {
         color: #152f69;
         font-weight: bold;
