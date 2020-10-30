@@ -12850,6 +12850,10 @@ a.no-underline:hover {
                 align-items: center; }
         .single-post aside.social-share-holder .social-share-links li {
           margin-bottom: 0; } }
+  @media (max-width: 767.98px) {
+    .single-post aside.social-share-holder {
+      padding-top: 0;
+      margin-bottom: 2rem; } }
   @media (max-width: 1199.98px) {
     .single-post aside {
       -webkit-box-ordinal-group: 3;
@@ -12870,6 +12874,9 @@ a.no-underline:hover {
   .single-post article main .featured-image-holder {
     position: relative;
     margin-bottom: 2.5rem; }
+    @media (max-width: 767.98px) {
+      .single-post article main .featured-image-holder {
+        margin-bottom: 1rem; } }
     .single-post article main .featured-image-holder img {
       width: 100%;
       -webkit-box-shadow: -5px 5px 10px 5px gray;

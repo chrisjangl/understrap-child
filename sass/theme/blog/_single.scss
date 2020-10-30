@@ -43,6 +43,11 @@
             }
         
         }
+
+        @include media-breakpoint-down(sm) {
+            padding-top: 0;
+            margin-bottom: 2rem;
+        }
     }
 
     @include media-breakpoint-down(lg) {
@@ -69,6 +74,9 @@
             .featured-image-holder {
                 position: relative;
                 margin-bottom: 2.5rem;
+                @include media-breakpoint-down(sm) {
+                    margin-bottom: 1rem;
+                }
                 
                 img {
                     width: 100%;
