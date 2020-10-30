@@ -6,14 +6,13 @@
  * 
  * @todo: make sure to remove all JS code - <% %>
  * @todo: the_custom_logo() links to the WP site url
- * @todo: set up variable for site url
  *
  * @package UnderStrap
  */
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
-
+$main_site_url = 'https://usaservicedogs.org';
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
@@ -45,12 +44,12 @@ $container = get_theme_mod( 'understrap_container_type' );
                                 <li><a href="mailto:orders@usaservicedogs.org">orders@usaservicedogs.org</a></li>
                             </ul>
                             <ul class="list-unstyled font-weight-bold">
-                                <li><a href="<%= siteVars.url %>/contact">Contact Us</a></li>
-                                <li><a href="<%= siteVars.url %>/lookup">ID Lookup</a></li>
-                                <li><a href="<%= siteVars.url %>/members">Members</a></li>
-                                <li><a href="<%= siteVars.url %>/return-policy">Return Policy</a></li>
-                                <li><a href="<%= siteVars.url %>/faq">FAQs</a></li>
-                                <li><a href="<%= siteVars.url %>/sitemap">Site Map</a></li>
+                                <li><a href="<?php echo $main_site_url; ?>/contact">Contact Us</a></li>
+                                <li><a href="<?php echo $main_site_url; ?>/lookup">ID Lookup</a></li>
+                                <li><a href="<?php echo $main_site_url; ?>/members">Members</a></li>
+                                <li><a href="<?php echo $main_site_url; ?>/return-policy">Return Policy</a></li>
+                                <li><a href="<?php echo $main_site_url; ?>/faq">FAQs</a></li>
+                                <li><a href="<?php echo $main_site_url; ?>/sitemap">Site Map</a></li>
                             </ul>
                         </div>
 
@@ -64,13 +63,12 @@ $container = get_theme_mod( 'understrap_container_type' );
                 <div class="border-left border-white col-md-6 text-uppercase h5">
 
                     <!-- Links -->
-
                     <ul class="list-unstyled">
-                        <li><a href="<%= siteVars.url %>/register/service-dog-registration/">Register Service Dog</a></li>
-                        <li><a href="<%= siteVars.url %>/register/emotional-support-dog-registration/">Register Emotional Support Dog</a></li>
-                        <li><a href="<%= siteVars.url %>/shop/">Shop</a></li>
-                        <li><a href="<%= siteVars.url %>/more-information/">Info Center</a></li>
-                        <li><a href="<%= siteVars.url %>/blog/">Blog</a></li>
+                        <li><a href="<?php echo $main_site_url; ?>/register/service-dog-registration/">Register Service Dog</a></li>
+                        <li><a href="<?php echo $main_site_url; ?>/register/emotional-support-dog-registration/">Register Emotional Support Dog</a></li>
+                        <li><a href="<?php echo $main_site_url; ?>/shop/">Shop</a></li>
+                        <li><a href="<?php echo $main_site_url; ?>/more-information/">Info Center</a></li>
+                        <li><a href="<?php echo $main_site_url; ?>/blog/">Blog</a></li>
                     </ul>
 
                 </div>
