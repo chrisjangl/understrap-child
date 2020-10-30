@@ -6,6 +6,7 @@
  * 
  * @todo: make sure to remove all JS code - <% %>
  * @todo: the_custom_logo() links to the WP site url
+ * @todo: set up variable for site url
  *
  * @package UnderStrap
  */
@@ -97,21 +98,22 @@ $container = get_theme_mod( 'understrap_container_type' );
                 fake service dog registrations and the problems they create. Registration not required by the ADA.<br />
                 v1.0.24</small>
         </section>
-        <!-- Copyright -->
+        <!-- /Copyright -->
 
+        <!-- Powered By -->
         <section class="no-border py-4" id="powered-by">
             <div class="container">
 
                 <div class="row">
 
-                        <img src="/<%= siteVars.public_folder %>/images/powered-by.png" alt="">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/powered-by.png" alt="">
 
                 </div>
                 <!-- end row -->
             </div>
             <!-- end container-fluid -->
         </section>
-        <!-- end #powered-by -->
+        <!-- end Powered By -->
 
     </footer><!-- #colophon -->
 

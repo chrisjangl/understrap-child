@@ -34,7 +34,15 @@ footer {
 
         // footer logo
         &.navbar-brand.custom-logo-link {
-            display: initial;
+            // py-0 mb-3 mb-md-0 mr-auto
+            padding-top: 0;
+            padding-bottom: 0;
+            margin-bottom: 1em;
+            margin-right: auto;
+
+            @include media-breakpoint-up(md) {
+                margin-bottom: 0;
+            }            
         }
     }
 

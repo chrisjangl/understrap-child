@@ -12981,7 +12981,13 @@ footer {
       color: white;
       text-decoration: underline; }
     footer a.navbar-brand.custom-logo-link {
-      display: initial; }
+      padding-top: 0;
+      padding-bottom: 0;
+      margin-bottom: 1em;
+      margin-right: auto; }
+      @media (min-width: 768px) {
+        footer a.navbar-brand.custom-logo-link {
+          margin-bottom: 0; } }
   footer ul {
     margin-left: 0; }
     footer ul li {
