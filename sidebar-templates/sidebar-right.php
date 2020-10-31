@@ -27,8 +27,7 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 
         <h2 class="">Featured Posts</h2>
 
-        <?php dc_get_recent_posts(); ?>
-        <?php // dc_get_featured_posts(); ?>
+        <?php dc_get_featured_posts(); ?>
 
     </div>
 
