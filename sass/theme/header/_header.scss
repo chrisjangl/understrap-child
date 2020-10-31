@@ -17,6 +17,17 @@
         }
     }
 
+    body.blog & {
+        background-position-x: 15%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-bottom: 10px solid $gold;
+
+        h1 {
+            text-transform: none;
+        }
+    }
+
     background-size: cover;
     height: 250px;
 

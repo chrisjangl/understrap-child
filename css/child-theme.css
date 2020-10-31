@@ -12609,6 +12609,13 @@ a.no-underline:hover {
     @media (max-width: 991.98px) {
       body.kit-options .page-title {
         background-position: 60%; } }
+  body.blog .page-title {
+    background-position-x: 15%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 10px solid #dac23c; }
+    body.blog .page-title h1 {
+      text-transform: none; }
   .page-title h1 {
     font-size: 2.777777778rem;
     font-weight: bold; }

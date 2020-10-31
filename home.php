@@ -9,6 +9,14 @@
 get_header();
 ?>
 
+<div class="page-title" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/images/blog-hero.jpg');">
+    <div class="overlay">
+
+        <h1 class="white no-margin">Supporting you every step of the way with your service dog or emotional support dog</h1>
+
+    </div>
+</div>
+
 <section class="grid-container container-fluid content-area archive" id="primary">
 
     <?php
