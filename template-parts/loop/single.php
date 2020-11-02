@@ -14,7 +14,7 @@
     </div>
     <div class="date-holder">
         <span class="post-date" >
-            <?php $post_date = get_the_date( 'F j, Y' ); echo $post_date;?>
+            <?php $post_date = get_the_date( 'm-d-Y' ); echo $post_date;?>
         </span>
     </div>
     <div class="excerpt">

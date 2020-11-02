@@ -12778,6 +12778,7 @@ a.no-underline:hover {
           text-decoration: none; }
       .blog .archive main article .date-holder .post-date {
         display: block;
+        color: #152f69;
         font-weight: bold;
         text-transform: uppercase;
         font-size: .85rem; }
