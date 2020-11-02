@@ -23,10 +23,12 @@ get_header();
     // get first three posts - maybe sticky? 
     $args = array(
         'posts_per_page' => 3,
-        // 'tag'   => 'Featured',
+        'tag'   => 'Featured',
     );
 
     $sticky_posts = new WP_Query( $args );
+    $sticky_post_ids = [];
+
     ob_start();
 
     if ( $sticky_posts->have_posts() ) :
@@ -37,19 +39,20 @@ get_header();
              <?php 
              while ( $sticky_posts->have_posts() ): ?>
 
-                 <?php
-                 $sticky_posts->the_post(); ?>
+                <?php
+                $sticky_posts->the_post(); ?>
 
                 <?php
                 // load sticky post template
                 $holler = get_template_part( 'template-parts/loop/single', 'sticky' ); ?>
 
 
-                 <?php
-                 // end $sticky_posts->have_posts(); 
-
-                echo $holler;
-             endwhile; ?>
+                <?php
+                // add post ID to array, so we can exclude it in the main loop below
+                array_push( $sticky_post_ids, get_the_ID() );
+                 
+            // end $sticky_posts->have_posts(); 
+            endwhile; ?>
 
          </header>
 
@@ -71,8 +74,8 @@ get_header();
         // $categories_to_exclude = dc_exclude_posts_from_archives();
 
         $main_args = array(
-            // 'category__not_in'  => $categories_to_exclude,
-                    'posts_per_page' => 6,
+            'post__not_in'  => $sticky_post_ids,
+            'posts_per_page' => 6,
 
         );
         $main_query = new WP_Query( $main_args );
@@ -101,6 +104,14 @@ get_header();
         wp_reset_query(); ?>
     </main>
 
+    <div class="load-more-posts">
+    
+        <?php 
+        next_posts_link( 'Load More' );
+        previous_posts_link( 'Previous' ); 
+        ?>
+        
+    </div>
 </section>
 
 <?php
