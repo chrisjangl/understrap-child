@@ -95,9 +95,10 @@
 
             article {
                 // @todo: figure out the row heights
-                display: grid;
-                grid-template-rows: 225px 4em 1.5em auto;
-                grid-row-gap: 20px;
+                display: flex;
+                flex-direction: column;
+                // grid-template-rows: 225px 4em 1.5em auto;
+                // grid-row-gap: 20px;
                 border-bottom: 1px solid $gold;
                 margin-bottom: 2rem;
                 padding-bottom: 2rem;
@@ -113,6 +114,10 @@
                     // border-bottom: 0;
                 }
                 
+                .image-holder {
+                    margin-bottom: 1rem;
+                }
+
                 .title-holder {
                     
                     h3 {
@@ -129,6 +134,7 @@
                 }
                     
                 .date-holder {
+                    margin-bottom: .5rem;
 
                     .post-date {
                         display: block;
@@ -141,6 +147,7 @@
                     
                 .excerpt {
                     color: #535353;
+                    margin-bottom: .5rem;
                 }
 
                 .read-more-holder {
