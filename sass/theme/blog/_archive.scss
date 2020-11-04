@@ -125,12 +125,24 @@
                 // on the border-bottom on each article to connect, simulating 
                 // a row-wide border
                 @include media-breakpoint-up(sm) {
-                    padding-left: 2rem;
-                    padding-right: 2rem;
-                }
-                
-                &:nth-last-child(-n+3) {
-                    // border-bottom: 0;
+
+                    // 1st in row
+                    &:nth-child(1), &:nth-child(4) {
+                        padding-right: 54px;
+                    }
+                    
+                    // 2nd in row
+                    &:nth-child(2), &:nth-child(5) {
+                        padding-left: 27px;
+                        padding-right: 27px;
+
+                    }
+                    
+                    // 3rd in row
+                    &:nth-child(3), &:nth-child(6) {
+                        padding-left: 54px;
+                    }
+                    // padding-right: 2rem;
                 }
                 
                 .image-holder {
