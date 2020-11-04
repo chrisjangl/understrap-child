@@ -12701,8 +12701,6 @@ a.no-underline:hover {
 
 .blog {
   background: #e6e7e9; }
-  .blog .archive#primary {
-    margin-top: 2rem; }
   .blog .archive .sticky-posts {
     margin-bottom: 3rem;
     display: grid;
@@ -12718,6 +12716,9 @@ a.no-underline:hover {
         grid-template-areas: "first" "second" "third"; } }
     .blog .archive .sticky-posts article:first-child {
       grid-area: first; }
+      .blog .archive .sticky-posts article:first-child .image-holder img {
+        -webkit-box-shadow: -5px 5px 10px 5px gray;
+                box-shadow: -5px 5px 10px 5px gray; }
     .blog .archive .sticky-posts article:second-child {
       grid-area: second; }
     .blog .archive .sticky-posts article:third-child {
@@ -12731,6 +12732,7 @@ a.no-underline:hover {
         height: 100%; }
     .blog .archive .sticky-posts article .title-holder {
       position: absolute;
+      text-transform: none;
       bottom: 2%;
       left: 3%;
       right: 3%; }
@@ -12740,10 +12742,19 @@ a.no-underline:hover {
         font-size: 30px;
         text-shadow: 1px 1px 1px black;
         font-weight: bold;
+        text-transform: none;
         text-decoration: none; }
+      .blog .archive .sticky-posts article .title-holder a {
+        position: relative; }
+        .blog .archive .sticky-posts article .title-holder a::after {
+          content: "\2192";
+          position: absolute; }
   .blog .archive main {
-    border-top: 1px solid #dac23c;
-    padding-bottom: 0; }
+    padding-bottom: 0;
+    padding-top: 0; }
+    .blog .archive main.page-1 {
+      padding-top: 3rem;
+      border-top: 1px solid #dac23c; }
     .blog .archive main h2 {
       line-height: 1;
       text-transform: uppercase;
