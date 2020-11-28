@@ -63,3 +63,18 @@ function dc_modify_read_more_link() {
     
 }
 // add_filter( 'excerpt_more', 'dc_modify_read_more_link', 99   );
+
+function dc_replace_logo_link( $html ) {
+
+	$site_url = get_site_url();
+	$site_link = "href=\"$site_url\"";
+	
+	$usasd_url = "https://usaservicedogs.org";
+	$usasd_link = 'href="' . $usasd_url . '"';
+	
+	$new_html = str_replace( $site_url, 'ug', $html ); 
+
+	return $new_html;
+}
+// @todo: uncomment below for custom URL in logo
+// add_filter( 'get_custom_logo', 'dc_replace_logo_link' );
