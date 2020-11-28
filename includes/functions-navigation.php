@@ -37,7 +37,7 @@ function dc_get_navigation_from_JS() {
 
 	<a href="<?php echo $main_site_url; ?>/register" class="btn border-gold bg-transparent d-lg-none" id="small-cart-btn"> Register</a>
 
-	<div class="collapse navbar-collapse flex-column justify-content-around align-items-end" id="navbarNav">
+	<div class="collapse navbar-collapse flex-column justify-content-around align-items-end" id="navbarNavDropdown">
         
         <ul class="navbar-nav">
             <li class="nav-item"><a href="<?php echo $main_site_url; ?>/more-information" class="nav-link">Info Center</a></li>

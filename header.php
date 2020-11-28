@@ -70,7 +70,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					array(
 						'theme_location'  => 'primary',
 						'container_class' => 'collapse navbar-collapse flex-column justify-content-around align-items-end',
-						'container_id'    => 'navbarNav',
+						'container_id'    => 'navbarNavDropdown',
 						'menu_class'      => 'navbar-nav',
 						'fallback_cb'     => 'dc_get_navigation_from_JS',
 						'menu_id'         => '',
