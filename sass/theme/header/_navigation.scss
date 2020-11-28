@@ -11,6 +11,25 @@
         padding: 0.5em 3em;
     }
 
+    // set order of elements on mobile
+    @include media-breakpoint-down(md) {
+        a.navbar-brand {
+            order: 1;
+        }
+
+        a#small-cart-btn {
+            order: 2;
+        }
+
+        .navbar-toggler {
+            order: 3;
+        }
+
+        #navbarNavDropdown {
+            order: 4;
+        }
+    }
+
     .navbar-brand img {
         max-width: 115px;
         max-height: 115px;

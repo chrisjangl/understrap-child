@@ -12548,6 +12548,24 @@ a.no-underline:hover {
   .navbar {
     padding: 0.5em 3em; } }
 
+@media (max-width: 991.98px) {
+  .navbar a.navbar-brand {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1; }
+  .navbar a#small-cart-btn {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2; }
+  .navbar .navbar-toggler {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3; }
+  .navbar #navbarNavDropdown {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4; } }
+
 .navbar .navbar-brand img {
   max-width: 115px;
   max-height: 115px; }
