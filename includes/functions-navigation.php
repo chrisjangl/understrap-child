@@ -72,7 +72,7 @@ function dc_get_header_contact_bar() {
 
 	<div class="contact-bar container-fluid bg-blue-dark white">
 		<div class="row">
-		<div class="page-header-item d-none d-md-inline">
+		<div class="page-header-item d-none d-lg-inline">
 			<span><em>Need help?</em></span>
 		</div>
 		<div class="page-header-item">
