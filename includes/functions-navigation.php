@@ -35,8 +35,6 @@ function dc_get_navigation_from_JS() {
 	ob_start();
 	?>
 
-	<a href="<?php echo $main_site_url; ?>/register" class="btn border-gold bg-transparent d-lg-none" id="small-cart-btn"> Register</a>
-
 	<div class="collapse navbar-collapse flex-column justify-content-around align-items-end" id="navbarNavDropdown">
         
         <ul class="navbar-nav">
@@ -73,23 +71,23 @@ function dc_get_header_contact_bar() {
 	?>
 
 	<div class="contact-bar container-fluid bg-blue-dark white">
-    <div class="row">
-      <div class="page-header-item d-none d-md-inline">
-        <span><em>Need help?</em></span>
-      </div>
-      <div class="page-header-item">
-        <i class="fa fa-phone fa-flip-horizontal"></i>
-        <a class="d-none d-md-inline" href="tel:888-656-3647" >888-656-DOGS (3647)</a>
-        <a class="d-md-none" href="tel:888-656-3647" >888-656-3647</a>
-    </div>
-    <div class="page-header-item">
-        <i class="fa fa-envelope"></i>
-        <a class="d-none d-md-inline" href="mailto:orders@usaservicedogs.org">orders@usaservicedogs.org</a>
-        <a class="d-md-none" href="mailto:orders@usaservicedogs.org">Email Us</a>
-      </div>
-        
-    </div>
-  </div>
+		<div class="row">
+		<div class="page-header-item d-none d-md-inline">
+			<span><em>Need help?</em></span>
+		</div>
+		<div class="page-header-item">
+			<i class="fa fa-phone fa-flip-horizontal"></i>
+			<a class="d-none d-md-inline" href="tel:888-656-3647" >888-656-DOGS (3647)</a>
+			<a class="d-md-none" href="tel:888-656-3647" >888-656-3647</a>
+		</div>
+		<div class="page-header-item">
+			<i class="fa fa-envelope"></i>
+			<a class="d-none d-md-inline" href="mailto:orders@usaservicedogs.org">orders@usaservicedogs.org</a>
+			<a class="d-md-none" href="mailto:orders@usaservicedogs.org">Email Us</a>
+		</div>
+			
+		</div>
+	</div>
 
   <?php
 

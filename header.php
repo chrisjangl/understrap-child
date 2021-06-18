@@ -11,6 +11,8 @@
 defined( 'ABSPATH' ) || exit;
 
 $container = get_theme_mod( 'understrap_container_type' );
+$main_site_url = 'https://usaservicedogs.org';
+
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -60,6 +62,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 					?>
 					<!-- end custom logo -->
 
+				<?php // mobile Register button ?>
+				<a href="<?php echo $main_site_url; ?>/register" class="btn border-gold bg-transparent d-lg-none" id="small-cart-btn"> Register</a>
+
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
 					<span class="navbar-toggler-icon"></span>
 				</button>
@@ -83,9 +88,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 			</div><!-- .container -->
 			<?php endif; ?>
 
-        </nav><!-- .site-navigation -->
+			<?php
+			echo dc_get_header_contact_bar(); ?>
 
-		<?php
-		echo dc_get_header_contact_bar(); ?>
+        </nav><!-- .site-navigation -->
 
 	</div><!-- #wrapper-navbar end -->

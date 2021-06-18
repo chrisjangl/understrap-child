@@ -17,25 +17,14 @@
         }
     }
 
-    body.blog & {
-        background-position-x: 15%;
-        background-repeat: no-repeat;
-        background-size: cover;
-        border-bottom: 10px solid $gold;
-
-        h1 {
-            text-transform: none;
-        }
-    }
-
     background-size: cover;
-    height: 250px;
+    height: 200px;
 
         h1 {
-            font-size: 2.777777778rem;
+            font-size: 2rem;
             font-weight: bold;
 
-            @include media-breakpoint-up(lg) {
+            @include media-breakpoint-up(md) {
                 font-size: 2.666666667rem;
             }
         }

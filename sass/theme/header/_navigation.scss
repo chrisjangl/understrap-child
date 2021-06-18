@@ -1,44 +1,49 @@
 .navbar {
+    padding-bottom: 10px;
+    display: grid;
+    
+    // grid stuff - some alignment may be in partials, as well
+    .contact-bar {
+        grid-column: 1 / 4;
+        justify-content: center;
+
+        .row {
+            justify-content: center;
+        }
+    }
     @include media-breakpoint-up(md) {
         padding: 0.5em 1.5em;
+        // 1fr forces the second column to take up the remaining available space
+        grid-template-columns: auto auto 75px;
+        grid-template-rows: 75px auto;
+        
+        // logo holder
+        .navbar-brand {
+            grid-row: 1 / 3;
+        }
+        
+        #small-cart-btn {
+            justify-self: end;
+        }
+        
+        .contact-bar {
+            grid-column: 2 / 4;
+
+            .row {
+                justify-content: flex-end;
+            }
+        }
     }
-  
+    
     @include media-breakpoint-up(lg) {
+        // 1fr forces the second column to take up the remaining available space
+        grid-template-columns: auto 1fr;
+        grid-template-rows: 75px auto;
         padding: 0.5em 2em;
     }
 
     @include media-breakpoint-up(xl) {
         padding: 0.5em 3em;
-    }
-
-    // set order of elements on mobile
-    @include media-breakpoint-down(md) {
-        a.navbar-brand {
-            order: 1;
-        }
-
-        a#small-cart-btn {
-            order: 2;
-        }
-
-        .navbar-toggler {
-            order: 3;
-        }
-
-        #navbarNavDropdown {
-            order: 4;
-        }
-    }
-
-    .navbar-brand img {
-        max-width: 115px;
-        max-height: 115px;
-    }
-
-    ul li {
-        position: relative;
-        left: 1em;
-        padding-right: 1em;
     }
 
     @include media-breakpoint-down(sm) {
@@ -49,8 +54,8 @@
     }
 
     #small-cart-btn {
-        margin-right: 1rem;
         margin-bottom: 0;
+        padding: .8em 1em;
     }
 
     .navbar-nav li.nav-item a {
