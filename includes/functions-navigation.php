@@ -72,20 +72,19 @@ function dc_get_header_contact_bar() {
 
 	<div class="contact-bar container-fluid bg-blue-dark white">
 		<div class="row">
-		<div class="page-header-item d-none d-md-inline">
-			<span><em>Need help?</em></span>
-		</div>
-		<div class="page-header-item">
-			<i class="fa fa-phone fa-flip-horizontal"></i>
-			<a class="d-none d-md-inline" href="tel:888-656-3647" >888-656-DOGS (3647)</a>
-			<a class="d-md-none" href="tel:888-656-3647" >888-656-3647</a>
-		</div>
-		<div class="page-header-item">
-			<i class="fa fa-envelope"></i>
-			<a class="d-none d-md-inline" href="mailto:orders@usaservicedogs.org">orders@usaservicedogs.org</a>
-			<a class="d-md-none" href="mailto:orders@usaservicedogs.org">Email Us</a>
-		</div>
-			
+			<div class="page-header-item d-none d-lg-inline">
+				<span><em>Need help?</em></span>
+			</div>
+			<div class="page-header-item">
+				<i class="fa fa-phone fa-flip-horizontal"></i>
+				<a class="d-none d-md-inline" href="tel:888-656-3647" >888-656-DOGS (3647)</a>
+				<a class="d-md-none" href="tel:888-656-3647" >888-656-3647</a>
+			</div>
+			<div class="page-header-item">
+				<i class="fa fa-envelope"></i>
+				<a class="d-none d-md-inline" href="mailto:orders@usaservicedogs.org">orders@usaservicedogs.org</a>
+				<a class="d-md-none" href="mailto:orders@usaservicedogs.org">Email Us</a>
+			</div>
 		</div>
 	</div>
 
