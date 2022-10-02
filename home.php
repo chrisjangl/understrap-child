@@ -26,7 +26,7 @@ global $paged;
     $sticky_post_ids = [];
 
     // if we're on the first page of a paginated archive, then let's include Featured Posts (sticky)
-    if ( $paged == 0 ) {
+    if ( is_front_page() ) {
 
         // get first three posts - maybe sticky? 
         $args = array(
