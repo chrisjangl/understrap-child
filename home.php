@@ -98,6 +98,7 @@ global $paged;
         $main_args = array(
             'post__not_in'  => $sticky_post_ids,
             'posts_per_page' => 6,
+            'paged' =>  $paged
 
         );
         $main_query = new WP_Query( $main_args );
