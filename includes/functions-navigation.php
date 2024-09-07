@@ -38,10 +38,6 @@ function dc_get_navigation_from_JS() {
 	<div class="collapse navbar-collapse flex-column justify-content-around align-items-end" id="navbarNavDropdown">
         
         <ul class="navbar-nav">
-            <li class="nav-item"><a href="<?php echo $main_site_url; ?>/more-information" class="nav-link">Info Center</a></li>
-            <li class="nav-item"><a href="<?php echo $main_site_url; ?>/faq" class="nav-link">FAQ</a></li>
-            <li class="nav-item"><a href="<?php echo $main_site_url; ?>/shop" class="nav-link">Shop</a></li>
-            <li class="nav-item"><a href="<?php echo $main_site_url; ?>/contact" class="nav-link">Contact</a></li>
             <li class="nav-item">
                 <a href="<?php echo $main_site_url; ?>/cart" class="nav-link">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/ShoppingCart.png" style="margin-right:5px; width: 30px; height: 30px;">
@@ -52,6 +48,10 @@ function dc_get_navigation_from_JS() {
 					?>
                 </a>
             </li>
+            <li class="nav-item"><a href="<?php echo $main_site_url; ?>/more-information" class="nav-link">Info Center</a></li>
+            <li class="nav-item"><a href="<?php echo $main_site_url; ?>/faq" class="nav-link">FAQ</a></li>
+            <li class="nav-item"><a href="<?php echo $main_site_url; ?>/shop" class="nav-link">Shop</a></li>
+            <li class="nav-item"><a href="<?php echo $main_site_url; ?>/contact" class="nav-link">Contact</a></li>
             <li class="nav-item d-none d-lg-block"><a href="<?php echo $main_site_url; ?>/register" class="btn border-gold bg-transparent">Register</a></li>
         </ul>
     </div>
