@@ -76,7 +76,7 @@ function dc_get_header_contact_bar() {
 				<span><em>Need help?</em></span>
 			</div>
 			<div class="page-header-item">
-				<i class="fa fa-phone fa-flip-horizontal"></i>
+				<i class="fa fa-phone"></i>
 				<a class="d-none d-md-inline" href="tel:888-656-3647" >888-656-DOGS (3647)</a>
 				<a class="d-md-none" href="tel:888-656-3647" >888-656-3647</a>
 			</div>
