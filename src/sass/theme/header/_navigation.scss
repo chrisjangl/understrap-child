@@ -58,6 +58,12 @@
         padding: .8em 1em;
     }
 
+    .navbar-nav li.nav-item {
+        position: relative;
+        left: 1em;
+        padding-right: 1em;
+    }
+
     .navbar-nav li.nav-item a {
         text-decoration: none;
         padding-left: 1em;
